@@ -1,24 +1,41 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import ProductCard from "../../Components/ProductCard";
 import "./Home.css";
 
 const Home = () => {
-  return (
-    <div className="home-container">
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setLoading(true);
+    axios({
+      method: "GET",
+      baseURL: "https://fakestoreapi.com",
+      url: "/products?limit=20",
+    })
+      .then(({ data }) => {
+        setData(data);
+        console.log(data);
+      })
+      .catch((err) => console.dir(err))
+      .finally(() => setLoading(false));
+  }, []);
+
+  let products = [];
+
+  data.forEach((elm) => {
+    products.push(
       <ProductCard
-        title="ASUS RTX 3070 8GB ddr5 GPU"
+        title={elm.title}
         availability="Y"
-        image="asus_3070_tuf.jpg"
-        price="Rs 64000"
+        image={elm.image}
+        price={elm.price}
       />
-      <ProductCard
-        title="ASUS RTX 3070 8GB ddr5 GPU"
-        availability="N"
-        image="asus_3070_tuf.jpg"
-        price="Rs 64000"
-      />
-    </div>
-  );
+    );
+  });
+
+  return <div className="home-container">{products}</div>;
 };
 
 export default Home;
