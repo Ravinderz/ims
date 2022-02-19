@@ -1,0 +1,17 @@
+.header-container {
+  width: 100%;
+  min-height: 50px;
+  background-color: darkgreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  object-fit: cover;
+  width: 150px;
+}
+
+.search-bar {
+  margin-right: 20px;
+}

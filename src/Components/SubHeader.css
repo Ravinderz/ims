@@ -1,0 +1,10 @@
+.subheader-container {
+  width: 100%;
+  background-color: dimgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+.home-container {
+  height: 80vh;
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+}

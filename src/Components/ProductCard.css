@@ -1,0 +1,114 @@
+.product-container {
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0 20px;
+  position: relative;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.product-img {
+  object-fit: cover;
+  width: 200px;
+}
+
+.price {
+  margin: 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product-stock {
+  margin: 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  width: 75px;
+  position: absolute;
+  top: -11px;
+  left: -15px;
+}
+
+.product-success {
+  background-color: green;
+  color: white;
+}
+
+.product-danger {
+  background-color: rgba(191, 29, 29);
+  color: white;
+}
+
+.product-primary-btn {
+  margin-top: 10px;
+  color: white;
+  padding: 5px 8px;
+  background-color: #d97e1c;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
