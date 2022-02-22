@@ -27,6 +27,7 @@ const Home = () => {
   data.forEach((elm) => {
     products.push(
       <ProductCard
+        key={elm.id}
         title={elm.title}
         availability="Y"
         image={elm.image}

@@ -1,3 +1,4 @@
+import { Paper } from "@mui/material";
 import "./App.css";
 import Header from "./Components/Header";
 import SubHeader from "./Components/SubHeader";

@@ -1,10 +1,10 @@
 .header-container {
   width: 100%;
   min-height: 50px;
-  background-color: darkgreen;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .logo {
@@ -13,5 +13,30 @@
 }
 
 .search-bar {
-  margin-right: 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(75, 86, 107, 0.3);
+  line-height: 24px;
+  height: 30px;
+  width: calc(100% - 40px);
+  padding-left: 40px;
+}
+
+.search-bar-wrapper{
+  position: relative;
+  width: 75%;
+}
+
+.action-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 50%;
+}
+
+.search-icon-position{
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  /* color: #b0aeae; */
+  color: rgba(75, 86, 107, 0.4)
 }
